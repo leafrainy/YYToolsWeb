@@ -3,7 +3,7 @@
 YYTools 产品官网与安装包发布页。
 
 - **官网**：由 [Vercel](https://vercel.com) 部署，可绑定自定义域名
-- **安装包**：通过 [GitHub Releases](https://github.com/leafrainy/YYToolsWeb/releases) 分发
+- **安装包**：GitHub Releases 源文件 + 大陆加速镜像（`ghfast.top`）分发
 - **源码仓库**（私有）：[leafrainy/YYTools](https://github.com/leafrainy/YYTools)
 
 ## 目录说明

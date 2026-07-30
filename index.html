@@ -584,13 +584,24 @@
 
   <script>
     (function () {
+      // 大陆可访问的 GitHub Release 加速前缀（原始地址为 github.com/.../releases/download/...）
+      var MIRROR_PREFIXES = [
+        'https://ghfast.top/',
+        'https://gh-proxy.com/'
+      ];
       var RELEASE_BASE = 'https://github.com/leafrainy/YYToolsWeb/releases/latest/download';
+
+      function toChinaURL(url) {
+        if (!url) return url;
+        if (url.indexOf('https://github.com/') !== 0) return url;
+        return MIRROR_PREFIXES[0] + url;
+      }
 
       function applyDownloads(downloads) {
         document.querySelectorAll('[data-dl]').forEach(function (el) {
           var key = el.getAttribute('data-dl');
           if (downloads && downloads[key]) {
-            el.href = downloads[key];
+            el.href = toChinaURL(downloads[key]);
           }
         });
       }
@@ -604,7 +615,7 @@
         if (badge) badge.textContent = '最新版';
       }
 
-      fetch('/release.json')
+      fetch('/release.json?t=' + Date.now())
         .then(function (r) { return r.json(); })
         .then(function (data) {
           applyDownloads(data.downloads);
