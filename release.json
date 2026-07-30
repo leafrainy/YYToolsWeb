@@ -1,9 +1,9 @@
 {
-  "version": "0.9.3",
-  "tag": "v0.9.3",
-  "updatedAt": "2026-07-30T11:37:00Z",
+  "version": "0.9.4",
+  "tag": "v0.9.4",
+  "updatedAt": "2026-07-30T12:03:28Z",
   "downloads": {
-    "mac": "https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.3/YYTools-mac.zip",
-    "win": "https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.3/YYTools-win.zip"
+    "mac": "https://cdn.jsdelivr.net/gh/leafrainy/YYToolsWeb@v0.9.4/downloads/YYTools-mac.zip",
+    "win": "https://cdn.jsdelivr.net/gh/leafrainy/YYToolsWeb@v0.9.4/downloads/YYTools-win.zip"
   }
 }
