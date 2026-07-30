@@ -584,15 +584,16 @@
 
   <script>
     (function () {
-      // 大陆可访问的 GitHub Release 加速前缀（原始地址为 github.com/.../releases/download/...）
+      // 方案 A：优先使用仓库内 downloads/ + jsDelivr；GitHub Releases 仅作兜底镜像
       var MIRROR_PREFIXES = [
         'https://ghfast.top/',
         'https://gh-proxy.com/'
       ];
-      var RELEASE_BASE = 'https://github.com/leafrainy/YYToolsWeb/releases/latest/download';
+      var JSDELIVR_BASE = 'https://cdn.jsdelivr.net/gh/leafrainy/YYToolsWeb@main/downloads';
 
       function toChinaURL(url) {
         if (!url) return url;
+        if (url.indexOf('jsdelivr.net/') !== -1) return url;
         if (url.indexOf('https://github.com/') !== 0) return url;
         return MIRROR_PREFIXES[0] + url;
       }
@@ -608,8 +609,8 @@
 
       function applyFallback() {
         applyDownloads({
-          mac: RELEASE_BASE + '/YYTools-mac.zip',
-          win: RELEASE_BASE + '/YYTools-win.zip'
+          mac: JSDELIVR_BASE + '/YYTools-mac.zip',
+          win: JSDELIVR_BASE + '/YYTools-win.zip'
         });
         var badge = document.getElementById('version-badge');
         if (badge) badge.textContent = '最新版';
