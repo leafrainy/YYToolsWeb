@@ -1,9 +1,9 @@
 {
-  "version": "0.9.2",
-  "tag": "v0.9.2",
-  "updatedAt": "2026-07-30T09:49:07Z",
+  "version": "0.9.3",
+  "tag": "v0.9.3",
+  "updatedAt": "2026-07-30T09:56:49Z",
   "downloads": {
-    "mac": "https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.2/YYTools-mac.zip",
-    "win": "https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.2/YYTools-win.zip"
+    "mac": "https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.3/YYTools-mac.zip",
+    "win": "https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.3/YYTools-win.zip"
   }
 }
