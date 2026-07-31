@@ -3,7 +3,7 @@
 YYTools 产品官网与安装包发布页。
 
 - **官网**：由 [Vercel](https://vercel.com) 部署，可绑定自定义域名
-- **安装包**：提交到本仓库 `downloads/`，经 [jsDelivr](https://www.jsdelivr.com/) CDN 加速分发（GitHub Releases 仍作备份）
+- **安装包**：GitHub Releases 源文件 + 大陆加速镜像（`ghfast.top`）分发
 - **源码仓库**（私有）：[leafrainy/YYTools](https://github.com/leafrainy/YYTools)
 
 ## 目录说明
@@ -11,8 +11,7 @@ YYTools 产品官网与安装包发布页。
 | 文件 | 说明 |
 |------|------|
 | `index.html` | 官网单页，下载链接从 `release.json` 动态加载 |
-| `release.json` | 当前版本与 jsDelivr 下载地址，由私有仓库 CI 在发版时自动更新 |
-| `downloads/` | 当前版本的 `YYTools-mac.zip` / `YYTools-win.zip`（写入 git，供 jsDelivr 加速） |
+| `release.json` | 当前版本与下载地址，由私有仓库 CI 在发版时自动更新 |
 | `vercel.json` | Vercel 静态站配置 |
 
 ## 本地预览
@@ -34,16 +33,14 @@ git push origin v0.9.4
 CI 会自动：
 
 1. 在 macOS / Windows Runner 上分别构建安装包
-2. 将 zip 写入本仓库 `downloads/`，更新 `release.json` 为 jsDelivr 地址
-3. 推送 `main` 并打同名 tag（供 `cdn.jsdelivr.net/gh/...@vX.Y.Z/...`）
-4. 创建 GitHub Release 并上传 zip 作为备份
-5. 触发 Vercel 重新部署
+2. 在本仓库创建 GitHub Release 并上传 zip
+3. 更新本仓库的 `release.json` 为 `ghfast.top` 加速地址，触发 Vercel 重新部署
 
 下载地址示例：
 
 ```text
-https://cdn.jsdelivr.net/gh/leafrainy/YYToolsWeb@v0.9.4/downloads/YYTools-mac.zip
-https://cdn.jsdelivr.net/gh/leafrainy/YYToolsWeb@v0.9.4/downloads/YYTools-win.zip
+https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.4/YYTools-mac.zip
+https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.4/YYTools-win.zip
 ```
 
 ## 修改官网文案
