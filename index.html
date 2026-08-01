@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="YYTools 叶雨工具箱 — 基于 Wails 与 Go 的桌面通用工具箱，内置局域网分享、端口探测、备案查询、时间工具与 JSON 处理。">
-  <meta name="keywords" content="叶雨工具箱,YYTools,局域网分享,端口探测,备案查询,JSON格式化">
+  <meta name="description" content="YYTools 叶雨工具箱 — 基于 Wails 与 Go 的桌面通用工具箱，内置局域网分享、端口探测、备案查询、时间工具、JSON 处理与内网穿透。">
+  <meta name="keywords" content="叶雨工具箱,YYTools,局域网分享,端口探测,备案查询,JSON格式化,内网穿透,frp">
   <title>YYTools · 叶雨工具箱</title>
   <style>
     :root {
@@ -502,9 +502,9 @@
           <p>左右分栏实时格式化预览，语法高亮展示；支持压缩、复制、清空，以及保留 Unicode 转义。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🖥️</div>
-          <h3>跨平台支持</h3>
-          <p>基于 Wails v2 与 Go 构建，提供 macOS Universal 与 Windows 64 位版本，覆盖常用桌面系统。</p>
+          <div class="feature-icon">🛰️</div>
+          <h3>内网穿透</h3>
+          <p>内置 frpc，填写任意 frps 即可将本机服务映射到公网；支持 TCP 单隧道一键启停，适合本地调试外网访问。</p>
         </div>
       </div>
 
@@ -544,12 +544,12 @@
         <div class="step">
           <div class="step-num">2</div>
           <h3>选择模块</h3>
-          <p>在左侧侧栏点击「局域网分享」「端口」「备案」「时间」或「Json」进入对应能力。</p>
+          <p>在左侧侧栏点击「局域网分享」「端口」「备案」「时间」「Json」或「穿透」进入对应能力。</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <h3>即开即用</h3>
-          <p>按模块说明操作即可：启动分享、探测端口、查询备案、转换时间或格式化 JSON。</p>
+          <p>按模块说明操作即可：启动分享、探测端口、查询备案、转换时间、格式化 JSON 或配置内网穿透。</p>
         </div>
       </div>
     </div>

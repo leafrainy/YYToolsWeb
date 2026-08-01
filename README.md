@@ -26,8 +26,8 @@ npx serve .
 在私有仓库 [YYTools](https://github.com/leafrainy/YYTools) 中打 tag 即可触发自动构建：
 
 ```bash
-git tag v0.9.4
-git push origin v0.9.4
+git tag v0.9.5
+git push origin v0.9.5
 ```
 
 CI 会自动：
@@ -39,8 +39,8 @@ CI 会自动：
 下载地址示例：
 
 ```text
-https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.4/YYTools-mac.zip
-https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.4/YYTools-win.zip
+https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.5/YYTools-mac.zip
+https://ghfast.top/https://github.com/leafrainy/YYToolsWeb/releases/download/v0.9.5/YYTools-win.zip
 ```
 
 ## 修改官网文案
