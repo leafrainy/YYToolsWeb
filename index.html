@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="YYTools 叶雨工具箱 — 基于 Wails 与 Go 的桌面通用工具箱，内置局域网分享、端口探测、备案查询、时间工具、JSON 处理与内网穿透。">
-  <meta name="keywords" content="叶雨工具箱,YYTools,局域网分享,端口探测,备案查询,JSON格式化,内网穿透,frp">
+  <meta name="description" content="YYTools 叶雨工具箱 1.0 — 基于 Wails 与 Go 的桌面通用工具箱，内置局域网分享、端口探测、备案查询、时间工具、JSON 处理、编码转换、原生录屏与内网穿透。">
+  <meta name="keywords" content="叶雨工具箱,YYTools,局域网分享,端口探测,备案查询,JSON格式化,Base64,URL编码,屏幕录制,内网穿透,frp">
   <title>YYTools · 叶雨工具箱</title>
   <style>
     :root {
@@ -447,14 +447,14 @@
     <div class="container">
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
-        桌面工具箱 · 模块化 · 跨平台 · <span id="version-badge">加载中…</span>
+        正式版 1.0 · 模块化 · 跨平台 · <span id="version-badge">加载中…</span>
       </div>
       <h1>
         叶雨工具箱
-        <span>YYTools — 一个客户端，多项实用能力</span>
+        <span>YYTools — 一个客户端，覆盖分享、排查、编码与原生录屏</span>
       </h1>
       <p class="hero-desc">
-        基于 Wails 与 Go 的桌面通用工具箱。开箱即用。
+        基于 Wails 与 Go 的桌面通用工具箱。分享、探测、备案、时间、JSON、编码、录屏与穿透，装好即用。
       </p>
       <div class="hero-actions">
         <a href="#" data-dl="mac" class="btn btn-primary" id="dl-mac-top">
@@ -502,6 +502,16 @@
           <p>左右分栏实时格式化预览，语法高亮展示；支持压缩、复制、清空，以及保留 Unicode 转义。</p>
         </div>
         <div class="feature-card">
+          <div class="feature-icon">🔤</div>
+          <h3>编码转换</h3>
+          <p>Base64 / URL 编解码一键切换，各自保留输入输出；非法内容给出明确提示，方便日常调试与粘贴转换。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <h3>原生录屏</h3>
+          <p>全屏录制本地 MP4，支持清晰 / 高清 / 原画与暂停继续。macOS 用 ScreenCaptureKit，Windows 用 DXGI + Media Foundation，无需额外 FFmpeg。</p>
+        </div>
+        <div class="feature-card">
           <div class="feature-icon">🛰️</div>
           <h3>内网穿透</h3>
           <p>内置 frpc，填写任意 frps 即可将本机服务映射到公网；支持 TCP 单隧道一键启停，适合本地调试外网访问。</p>
@@ -514,8 +524,8 @@
           <span>系统 WebView 桌面客户端</span>
         </div>
         <div class="compare-item">
-          <strong>Go net/http</strong>
-          <span>内置局域网分享服务</span>
+          <strong>原生录屏</strong>
+          <span>双端系统 API 落盘 MP4</span>
         </div>
         <div class="compare-item">
           <strong>原生前端</strong>
@@ -544,12 +554,12 @@
         <div class="step">
           <div class="step-num">2</div>
           <h3>选择模块</h3>
-          <p>在左侧侧栏点击「局域网分享」「端口」「备案」「时间」「Json」或「穿透」进入对应能力。</p>
+          <p>在左侧侧栏进入分享、端口、备案、时间、JSON、编码、录屏或穿透等模块。</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <h3>即开即用</h3>
-          <p>按模块说明操作即可：启动分享、探测端口、查询备案、转换时间、格式化 JSON 或配置内网穿透。</p>
+          <p>按模块说明操作即可：分享文件、排查网络、编解码、全屏录屏或配置内网穿透。</p>
         </div>
       </div>
     </div>
@@ -570,7 +580,7 @@
             Windows 版下载
           </a>
         </div>
-        <p class="download-note">需要 macOS 11+ 或 Windows 10+ · 局域网分享仅供可信网络内使用，请勿暴露至公网</p>
+        <p class="download-note">需要 macOS 12.3+（录屏）或 Windows 10+ · 局域网分享仅供可信网络内使用，请勿暴露至公网</p>
       </div>
     </div>
   </section>
@@ -578,7 +588,7 @@
   <footer>
     <div class="container">
       <p>YYTools · 叶雨工具箱</p>
-      <p>桌面通用工具箱，常用能力集中在一个客户端</p>
+      <p>正式版 1.0 · 桌面通用工具箱，常用能力集中在一个客户端</p>
     </div>
   </footer>
 
